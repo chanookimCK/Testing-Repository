@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문의하기 - gram#</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        #contact {
+            flex: 1;
+            padding: 60px 20px;
+            text-align: center;
+            background: #fff;
+        }
+        footer {
+            background: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">gram#</div>
+            <ul>
+                <li><a href="index.html">홈</a></li>
+                <li><a href="explore.html">탐색</a></li>
+                <li><a href="contact.html">문의하기</a></li>
+                <li><a href="login.html">로그인</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="contact">
+        <h2>문의하기</h2>
+        <p>질문이 있거나 협업을 원하시면 저희에게 연락주세요!</p>
+        <form id="contact-form">
+            <input type="text" placeholder="이름" required>
+            <input type="email" placeholder="이메일" required>
+            <textarea placeholder="메시지" required></textarea>
+            <button type="submit">메시지 보내기</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 gram#. All Rights Reserved.</p> <!-- 저작권은 영어로 유지 -->
+    </footer>
+    
+    <script src="js/scripts.js"></script>
+</body>
+</html>

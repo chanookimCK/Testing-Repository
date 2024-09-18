@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Kim Chan Woo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* 인스타그램 스타일 기본 설정 */
+        .profile-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .profile-header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .profile-header .profile-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .profile-header h2 {
+            font-size: 2em;
+            margin: 0;
+        }
+
+        .profile-header p {
+            color: #777;
+            margin-top: 10px;
+            font-size: 1em;
+        }
+
+        .profile-stats {
+            display: flex;
+            gap: 30px;
+            margin-top: 10px;
+        }
+
+        .profile-stats div {
+            font-size: 1em;
+        }
+
+        /* 게시물 그리드 */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .project-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .project-grid .project-item {
+            position: relative;
+        }
+
+        .project-grid .project-item .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            opacity: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            transition: opacity 0.3s ease;
+        }
+
+        .project-grid .project-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay h4 {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">gram#</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+
+    <section id="profile">
+        <div class="profile-header">
+            <img src="images/profile1.jpg" alt="Kim Chan Woo's profile picture">
+            <div class="profile-info">
+                <h2>Kim Chan Woo</h2>
+                <p>Chief Developer at gram#</p>
+                <div class="profile-stats">
+                    <div><strong>24</strong> Posts</div>
+                    <div><strong>1.2k</strong> Followers</div>
+                    <div><strong>500</strong> Following</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-grid">
+            <div class="project-item">
+                <img src="images/project1.jpg" alt="Project 1">
+                <div class="overlay">
+                    <h4>Project 1: Awesome Web App</h4>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="images/project2.jpg" alt="Project 2">
+                <div class="overlay">
+                    <h4>Project 2: AI Chatbot</h4>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="images/project3.jpg" alt="Project 3">
+                <div class="overlay">
+                    <h4>Project 3: Data Analytics Tool</h4>
+                </div>
+            </div>
+            <!-- 추가 게시물 -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 gram#. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
